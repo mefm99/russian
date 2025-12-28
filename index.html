@@ -1,0 +1,1355 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>روسيا بالعربي | دليل اللغة الروسية للسياح العرب</title>
+  <meta name="description" content="دليل اللغة الروسية للسياح العرب: كتاب قابل للطباعة + 8 محاضرات زووم تفاعلية للمحادثة، بدون مواعيد ثابتة. اتكلم بثقة في المطار والفندق والأسواق والتاكسي." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="روسيا بالعربي" />
+  <meta property="og:description" content="دليل اللغة الروسية للسياح العرب: كتاب + محاضرات أونلاين للمحادثة. اتكلم بثقة في روسيا." />
+  <meta property="og:type" content="website" />
+
+  <!-- Bootstrap 5 (RTL) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Google Font (Arabic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#0b5ed7;     /* أزرق الثقة */
+      --brand2:#0ea5e9;    /* سماوي */
+      --accent:#16a34a;    /* أخضر CTA */
+      --ink:#0f172a;
+      --muted:#64748b;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --ring: 0 0 0 .25rem rgba(11,94,215,.15);
+      --shadow: 0 16px 40px rgba(2,6,23,.08);
+    }
+
+    *{ font-family:"Cairo", system-ui, -apple-system, Segoe UI, Tahoma, Arial; }
+    body{ background:var(--bg); color:var(--ink); }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Navbar */
+    .navbar{
+      backdrop-filter: blur(10px);
+      background: rgba(248,250,252,.75);
+      border-bottom: 1px solid rgba(15,23,42,.08);
+    }
+    .brand-badge{
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color:#fff;
+      font-weight:800;
+      border-radius: 999px;
+      padding:.45rem .8rem;
+      box-shadow: 0 10px 25px rgba(11,94,215,.22);
+      letter-spacing:.2px;
+    }
+
+    /* Hero */
+    .hero{
+      position:relative;
+      overflow:hidden;
+      padding: 6.5rem 0 3.5rem;
+      background:
+        radial-gradient(1200px 500px at 75% 10%, rgba(14,165,233,.20), transparent 55%),
+        radial-gradient(900px 450px at 15% 25%, rgba(11,94,215,.18), transparent 55%),
+        linear-gradient(180deg, #ffffff, #f8fafc);
+    }
+    .hero:before{
+      content:"";
+      position:absolute; inset:-120px -120px auto auto;
+      width: 520px; height: 520px;
+      background: radial-gradient(circle at 30% 30%, rgba(11,94,215,.18), transparent 55%);
+      transform: rotate(12deg);
+      filter: blur(2px);
+      pointer-events:none;
+    }
+    .hero-card{
+      background:rgba(255,255,255,.95);
+      border:1px solid rgba(15,23,42,.08);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 1.25rem;
+    }
+    .hero h1{
+      font-weight: 900;
+      letter-spacing: .2px;
+      line-height: 1.15;
+    }
+    .lead{
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:.45rem .8rem;
+      border-radius: 999px;
+      background: rgba(11,94,215,.08);
+      border: 1px solid rgba(11,94,215,.14);
+      color: var(--brand);
+      font-weight: 700;
+      font-size: .95rem;
+    }
+
+    /* Buttons */
+    .btn-brand{
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      border: none;
+      box-shadow: 0 10px 25px rgba(11,94,215,.22);
+    }
+    .btn-brand:focus{ box-shadow: var(--ring); }
+    .btn-accent{
+      background: linear-gradient(135deg, var(--accent), #22c55e);
+      border:none;
+      box-shadow: 0 10px 25px rgba(22,163,74,.20);
+    }
+    .btn-accent:focus{ box-shadow: 0 0 0 .25rem rgba(22,163,74,.18); }
+    .btn-soft{
+      background: rgba(2,6,23,.04);
+      border: 1px solid rgba(2,6,23,.08);
+      color: var(--ink);
+    }
+
+    /* Section */
+    section{ padding: 4.25rem 0; }
+    .section-title{
+      font-weight: 900;
+      letter-spacing: .2px;
+    }
+    .section-sub{
+      color: var(--muted);
+      max-width: 56rem;
+    }
+
+    /* Cards */
+    .x-card{
+      background: var(--card);
+      border: 1px solid rgba(15,23,42,.08);
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(2,6,23,.06);
+      height: 100%;
+    }
+    .x-card .icon{
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      background: rgba(11,94,215,.08);
+      border: 1px solid rgba(11,94,215,.14);
+      color: var(--brand);
+      font-size: 1.2rem;
+    }
+    .x-card h5{ font-weight: 800; }
+    .x-card p{ color: var(--muted); margin:0; line-height: 1.8; }
+
+    /* Stripe info */
+    .stripe{
+      background: linear-gradient(135deg, rgba(11,94,215,.10), rgba(14,165,233,.10));
+      border: 1px solid rgba(11,94,215,.14);
+      border-radius: 18px;
+      padding: 1rem 1.25rem;
+    }
+    .stripe strong{ font-weight:900; }
+
+    /* Program */
+    .unit{
+      border-radius: 20px;
+      border: 1px solid rgba(15,23,42,.08);
+      background: #fff;
+      box-shadow: 0 16px 40px rgba(2,6,23,.06);
+      overflow:hidden;
+    }
+    .unit .head{
+      padding: 1.1rem 1.2rem;
+      background: linear-gradient(135deg, rgba(11,94,215,.10), rgba(14,165,233,.10));
+      border-bottom: 1px solid rgba(11,94,215,.12);
+    }
+    .unit .head h5{ margin:0; font-weight: 900; }
+    .unit .body{ padding: 1.1rem 1.2rem; }
+    .mini{
+      border-radius: 14px;
+      border: 1px solid rgba(15,23,42,.08);
+      background: rgba(248,250,252,.9);
+      padding: .9rem 1rem;
+      height: 100%;
+    }
+    .mini .tag{
+      display:inline-flex; align-items:center; gap:.45rem;
+      font-weight: 800;
+      color: var(--brand);
+      margin-bottom:.35rem;
+    }
+    .mini ul{ padding-right: 1.1rem; margin: .4rem 0 0; color: var(--muted); line-height: 1.9; }
+    .mini ul li{ margin-bottom: .15rem; }
+
+    /* Pricing */
+    .price-card{
+      position:relative;
+      border-radius: 22px;
+      border: 1px solid rgba(15,23,42,.08);
+      background: #fff;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      height:100%;
+    }
+    .price-card .top{
+      padding: 1.2rem 1.2rem .8rem;
+      background: linear-gradient(135deg, rgba(2,6,23,.03), rgba(11,94,215,.06));
+      border-bottom: 1px solid rgba(15,23,42,.08);
+    }
+    .price-card .name{
+      font-weight: 900;
+      margin: 0;
+    }
+    .price-card .badge-best{
+      display:inline-flex; align-items:center; gap:.4rem;
+      font-weight: 900;
+      background: rgba(22,163,74,.12);
+      color: #14532d;
+      border:1px solid rgba(22,163,74,.22);
+      padding:.35rem .65rem;
+      border-radius:999px;
+      font-size:.85rem;
+    }
+    .price{
+      font-weight: 900;
+      font-size: 2.1rem;
+      letter-spacing: .3px;
+    }
+    .price small{ font-size: 1rem; color: var(--muted); font-weight:700; }
+    .price-card .content{ padding: 1rem 1.2rem 1.2rem; }
+    .price-card ul{ margin:0; padding-right: 1.2rem; color: var(--muted); line-height: 1.95; }
+    .price-card li{ margin-bottom: .25rem; }
+
+    /* Audio */
+    .audio-tile{
+      display:flex; align-items:center; gap: .8rem;
+      padding: .9rem 1rem;
+      border-radius: 16px;
+      border:1px solid rgba(15,23,42,.08);
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(2,6,23,.05);
+      height:100%;
+    }
+    .audio-tile .bubble{
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      background: rgba(22,163,74,.10);
+      border:1px solid rgba(22,163,74,.20);
+      color:#166534;
+      font-size: 1.2rem;
+      flex: 0 0 auto;
+    }
+    audio{ width: 100%; }
+
+    /* Footer CTA */
+    .cta{
+      background: linear-gradient(135deg, rgba(11,94,215,.12), rgba(14,165,233,.12));
+      border-top: 1px solid rgba(11,94,215,.14);
+      border-bottom: 1px solid rgba(11,94,215,.14);
+    }
+
+    /* Floating buttons */
+    .float-actions{
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      z-index: 1030;
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .fab{
+      width: 52px; height: 52px;
+      border-radius: 16px;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow: 0 16px 40px rgba(2,6,23,.18);
+      border: 1px solid rgba(255,255,255,.35);
+      color:#fff;
+      text-decoration:none;
+      font-size: 1.25rem;
+    }
+    .fab-wa{ background: linear-gradient(135deg, #16a34a, #22c55e); }
+    .fab-tg{ background: linear-gradient(135deg, #0284c7, #0ea5e9); }
+    .fab:hover{ transform: translateY(-2px); transition: .15s ease; }
+
+    /* Small helper */
+    .muted{ color: var(--muted); }
+    .divider{
+      height:1px;
+      background: rgba(15,23,42,.08);
+      margin: 1rem 0;
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      html { scroll-behavior: auto; }
+      .fab:hover{ transform:none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <span class="brand-badge">روسيا بالعربي</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">عن الدليل</a></li>
+          <li class="nav-item"><a class="nav-link" href="#forwho">مناسب لمين</a></li>
+          <li class="nav-item"><a class="nav-link" href="#problems">المشاكل والحل</a></li>
+          <li class="nav-item"><a class="nav-link" href="#content">محتوى الدليل</a></li>
+          <li class="nav-item"><a class="nav-link" href="#program">البرنامج</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">السعر والباقات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">الأسئلة الشائعة</a></li>
+        </ul>
+
+        <div class="d-flex gap-2 ms-lg-3">
+          <a class="btn btn-accent btn-sm px-3" href="#pricing"><i class="bi bi-bag-check me-1"></i> شراء الدليل</a>
+          <a class="btn btn-brand btn-sm px-3" href="#contact"><i class="bi bi-chat-dots me-1"></i> تواصل</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="pill"><i class="bi bi-book"></i> كتاب قابل للطباعة</span>
+            <span class="pill"><i class="bi bi-camera-video"></i> 8 محاضرات زووم</span>
+            <span class="pill"><i class="bi bi-clock"></i> تبدأ وقت ما تحب</span>
+          </div>
+
+          <h1 class="display-5 mb-3">
+            دليل اللغة الروسية للسياح العرب
+            <span class="d-block" style="color:var(--brand)">اتكلم بثقة في روسيا… بدون ترجمة كل دقيقة</span>
+          </h1>
+
+          <p class="lead mb-4">
+            بعد الدليل ده مش هتكون مضطر تفتح ترجمة جوجل كل شوية.
+            هتقدر تتكلم بثقة في <strong>المطار</strong>، <strong>الفندق</strong>،
+            <strong>الأسواق</strong>، <strong>التاكسي</strong>، <strong>الشارع</strong> وتحس إنك مسيطر على الموقف.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#content" class="btn btn-brand btn-lg px-4">
+              <i class="bi bi-search me-2"></i> معرفة التفاصيل
+            </a>
+            <a href="#pricing" class="btn btn-accent btn-lg px-4">
+              <i class="bi bi-bag-check me-2"></i> شراء الدليل
+            </a>
+            <button class="btn btn-soft btn-lg px-4" data-bs-toggle="modal" data-bs-target="#videoModal">
+              <i class="bi bi-play-circle me-2"></i> شاهد فيديو قصير
+            </button>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="hero-card">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon" style="width:46px;height:46px;border-radius:16px;background:rgba(11,94,215,.10);border:1px solid rgba(11,94,215,.18);display:flex;align-items:center;justify-content:center;color:var(--brand)">
+                    <i class="bi bi-translate"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 fw-bold">عبارات في قوالب متعددة</h6>
+                    <p class="mb-0 muted">التواصل، التسوق، الثقافة، استخدام التطبيقات الروسية.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hero-card">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon" style="width:46px;height:46px;border-radius:16px;background:rgba(22,163,74,.10);border:1px solid rgba(22,163,74,.18);display:flex;align-items:center;justify-content:center;color:#166534">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 fw-bold">تتحرك بثقة</h6>
+                    <p class="mb-0 muted">تقلل النصب والإحراج والاعتماد على الترجمة.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Visual Card / Placeholder -->
+          <div class="x-card p-3">
+ <div class="ratio ratio-4x3 rounded-4 overflow-hidden"
+     style="border:1px solid rgba(15,23,42,.08);">
+  
+  <img 
+    src="assets/hero-russia.jpg"
+    alt="روسيا بالعربي - دليل اللغة الروسية للسياح العرب"
+    class="w-100 h-100"
+    style="object-fit: cover;">
+</div>
+
+
+            <div class="mt-3 stripe" id="about">
+              <div class="d-flex align-items-start gap-2">
+                <i class="bi bi-lightning-charge-fill fs-5" style="color:var(--brand)"></i>
+                <div>
+                  <strong>دليل اللغة الروسية للسياح العرب</strong> هو:
+                  <div class="muted mt-1">
+                    📘 كتاب تطبعه وتستخدمه + 🎥 محاضرات زووم تفاعلية للمحادثة<br/>
+                    ⏰ بدون مواعيد ثابتة — تبدأ وقت ما تحب
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 d-flex gap-2">
+              <a class="btn btn-accent w-100" href="#pricing"><i class="bi bi-bag-check me-2"></i>احجز الآن</a>
+              <a class="btn btn-soft w-100" href="#faq"><i class="bi bi-question-circle me-2"></i>الأسئلة الشائعة</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- For who -->
+  <section id="forwho">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-7">
+          <h2 class="section-title mb-2">الدليل مناسب لمين؟</h2>
+          <p class="section-sub mb-0">
+            مصمم مخصوص عشان يخدم السائح العربي في روسيا: سريع، واضح، عملي… من غير قواعد معقدة.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-airplane"></i></div>
+              <div>
+                <h5 class="mb-1">السياح العرب القادمين إلى روسيا</h5>
+                <p>جُمل جاهزة للمواقف اليومية في السفر.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-person-check"></i></div>
+              <div>
+                <h5 class="mb-1">المبتدئين تمامًا</h5>
+                <p>الدليل يبدأ من الصفر ويكسر رهبة اللغة.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-chat-square-text"></i></div>
+              <div>
+                <h5 class="mb-1">اللي عاوز محادثات عملية</h5>
+                <p>تستخدمها فورًا في المطار، الفندق، المطاعم، المواصلات.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-hourglass-split"></i></div>
+              <div>
+                <h5 class="mb-1">اللي معندوش وقت لقواعد</h5>
+                <p>نركز على اللي “ينفعك” مش اللي “يعقدك”.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-map"></i></div>
+              <div>
+                <h5 class="mb-1">اللي عاوز يتحرك بثقة</h5>
+                <p>تسأل وتفهم وتتصرف من غير توتر.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-lightning"></i></div>
+              <div>
+                <h5 class="mb-1">تعلم سريع وواضح</h5>
+                <p>نتيجة ملموسة في وقت قليل.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems -->
+  <section id="problems">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-2">بتواجه ده في روسيا؟</h2>
+          <p class="section-sub">
+            إحنا بنبيع حل لمشاكل حقيقية بتحصل للسياح… عشان تستمتع برحلتك وتقلل القلق.
+          </p>
+
+          <div class="row g-3 mt-2">
+            <div class="col-md-6">
+              <div class="x-card p-3">
+                <div class="d-flex gap-3">
+                  <div class="icon"><i class="bi bi-emoji-frown"></i></div>
+                  <div>
+                    <h5 class="mb-1">الإحراج</h5>
+                    <p>خايف الناس ما تفهمك.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="x-card p-3">
+                <div class="d-flex gap-3">
+                  <div class="icon"><i class="bi bi-compass"></i></div>
+                  <div>
+                    <h5 class="mb-1">الإحساس بالضياع</h5>
+                    <p>واقف ومش عارف تسأل.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="x-card p-3">
+                <div class="d-flex gap-3">
+                  <div class="icon"><i class="bi bi-google"></i></div>
+                  <div>
+                    <h5 class="mb-1">الاعتماد على الترجمة</h5>
+                    <p>ترجمة حرفية أو غلط.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="x-card p-3">
+                <div class="d-flex gap-3">
+                  <div class="icon"><i class="bi bi-exclamation-triangle"></i></div>
+                  <div>
+                    <h5 class="mb-1">الاستغلال أو النصب</h5>
+                    <p>خايف تدفع أكتر لأنك سايح.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="unit">
+            <div class="head">
+              <h5 class="d-flex align-items-center gap-2">
+                <i class="bi bi-shield-check"></i>
+                الحل: دليل عملي 100% للسياح العرب
+              </h5>
+            </div>
+            <div class="body">
+              <p class="mb-3 muted" style="line-height:1.9">
+                الدليل ده معمول عشان يخليك <strong>واثق ومرتاح</strong> في كل موقف خلال رحلتك لروسيا،
+                وده يخليك تقلل القلق وتتعامل بذكاء وتستمتع بالرحلة.
+              </p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-check2-circle"></i> تتكلم بثقة</div>
+                    <div class="muted">محادثات جاهزة للمطار، الفندق، المطاعم، المواصلات.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-check2-circle"></i> تقلل النصب</div>
+                    <div class="muted">تفهم الأرقام والأسعار وتساوم بحكمة.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-check2-circle"></i> توفّر وقت</div>
+                    <div class="muted">بدون قواعد معقدة—مباشر للّّي ينفعك.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-check2-circle"></i> تبدأ فورًا</div>
+                    <div class="muted">من غير مواعيد ثابتة—ابدأ وقت ما تحب.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3 d-flex gap-2">
+                <a href="#pricing" class="btn btn-accent w-100"><i class="bi bi-bag-check me-2"></i>مناسب لي—عاوز أحجز</a>
+                <a href="#content" class="btn btn-brand w-100"><i class="bi bi-list-check me-2"></i>شوف المحتوى</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section id="content">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-2">محتوى الدليل بشكل واضح وسهل</h2>
+          <p class="section-sub mb-0">
+            الدليل معمول عشان يخليك مرتاح في كل موقف خلال رحلتك لروسيا.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-6">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-camera-video"></i></div>
+              <div>
+                <h5 class="mb-1">8 محاضرات زووم</h5>
+                <p>تدريب عملي على محادثات حقيقية يوميًا.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-book"></i></div>
+              <div>
+                <h5 class="mb-1">كتاب قابل للطباعة</h5>
+                <p>أهم الجمل للمطار والتاكسي والفندق والأسواق.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-phone"></i></div>
+              <div>
+                <h5 class="mb-1">دليل تطبيقات روسيا</h5>
+                <p>أهم البرامج الروسية للتنقل والتعامل بسهولة.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="x-card p-3">
+            <div class="d-flex gap-3">
+              <div class="icon"><i class="bi bi-globe2"></i></div>
+              <div>
+                <h5 class="mb-1">محتوى سياحي وثقافي</h5>
+                <p>أماكن + أكل حلال + عادات وتقاليد روسية.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 stripe">
+        <div class="d-flex align-items-start gap-3">
+          <i class="bi bi-info-circle fs-5" style="color:var(--brand)"></i>
+          <div>
+            <strong>الهدف النهائي:</strong>
+            <span class="muted">تستمتع برحلتك بثقة… بدون توتر، وبدون ما تحس إنك تايه.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section id="program">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-2">برنامج الدليل (8 وحدات)</h2>
+          <p class="section-sub mb-0">
+            كل وحدة فيها: هدف واضح + محتوى عملي + نتيجة نهائية تخليك تتقدم خطوة حقيقية.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+
+        <!-- Unit 1 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة الأولى: فك شفرة اللغة الروسية</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تدخل روسيا وأنت قادر تقرأ أي كلمة قدامك وتفهم أساسها — من غير خوف.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>الحروف الروسية والنطق الصحي</li>
+                      <li>قراءة الكلمات بثقة</li>
+                      <li>التعريف عن النفس</li>
+                      <li>الجمل الترحيبية الأساسية</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تكسر حاجز اللغة من أول يوم.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 2 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة الثانية: من لحظة الوصول</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تتصرّف بسهولة من أول ما توصل روسيا — بدون توتر.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>تدريب عملي على القراءة</li>
+                      <li>محادثات المطار، التاكسي، القطار</li>
+                      <li>السؤال عن الاتجاهات</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تبدأ رحلتك بذكاء وثقة.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 3 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة الثالثة: الإقامة والتنقّل الذكي</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تكون مرتاح في السكن وعارف تستخدم الأدوات اللي تسهّل رحلتك.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>محادثات الفندق وحل المشاكل الشائعة</li>
+                      <li>أهم التطبيقات الروسية وكيفية استخدامها عمليًا</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تتنقل بسهولة وتتعامل بأريحية.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 4 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة الرابعة: التسوّق</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تطلب اللي تحب بثقة وتتحرك في المولات بأريحية.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>محادثات المطاعم والكافيهات</li>
+                      <li>الطلب والدفع والتعامل داخل المولات</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تشتري وتطلب بدون توتر أو إحراج.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 5 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة الخامسة: الشارع والأسواق الشعبية</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تحمي نفسك من الغش وتفهم التعاملات المالية بسهولة.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>محادثات الشارع</li>
+                      <li>الأسواق والفِصال وأشهر أماكن التسوق</li>
+                      <li>الأرقام الروسية (مهم جدًا للفلوس)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تعاملات مالية أذكى وثقة أكبر.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 6 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة السادسة: روسيا السياحية من الداخل</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تزور الأماكن الصح وتفهم قيمتها الحقيقية.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>أهم الأماكن السياحية في روسيا ومعلومات جديدة</li>
+                      <li>نصائح ذكية لزيارة أفضل</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تجربة سياحية أمتع ومخططة صح.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 7 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة السابعة: المطبخ الروسي الحلال</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تجربة أكل جديدة وأنت مطمّن.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>أشهر الأطباق الروسية وإيه اللي يناسبك كمسلم</li>
+                      <li>إزاي تسأل وتتأكد بثقة</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تاكل وتجرب وأنت مطمّن 100%.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 8 -->
+        <div class="col-12">
+          <div class="unit">
+            <div class="head">
+              <h5>الوحدة الثامنة: الثقافة الروسية (العادات والتقاليد)</h5>
+            </div>
+            <div class="body">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-bullseye"></i> الهدف</div>
+                    <div class="muted">تتعرف على ثقافة جديدة وتتعامل براحة ومن غير إحراج.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-journal-text"></i> المحتوى</div>
+                    <ul>
+                      <li>العادات والتقاليد الروسية وأسرار ثقافية مدهشة</li>
+                      <li>حاجات لازم تعرفها قبل التعامل مع الشعب الروسي</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mini">
+                    <div class="tag"><i class="bi bi-trophy"></i> النتيجة</div>
+                    <div class="muted">تتصرف بذكاء وتحترم الثقافة وتكسب احترام الناس.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-stars" style="color:var(--brand)"></i>
+                <div class="fw-bold">
+                  دليل اللغة الروسية للسياح العرب مش مجرد كورس… ده دليل يخليك تتحرك وتتكلّم وتستمتع برحلتك بكل أريحية.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-2">السعر والباقات</h2>
+          <p class="section-sub mb-0">
+            حطّينا السعر بعد ما شفت القيمة… عشان تعرف إنك بتاخد صفقة محترمة فعلًا.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <!-- Basic -->
+        <div class="col-lg-4">
+          <div class="price-card">
+            <div class="top">
+              <p class="name mb-1">الباقة الأساسية</p>
+              <div class="price">499 <small>ريال</small></div>
+              <div class="muted">كتاب + 8 محاضرات + محتوى سياحي</div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>📘 كتاب قابل للطباعة</li>
+                <li>🎥 8 محاضرات زووم</li>
+                <li>📱 دليل تطبيقات روسيا</li>
+                <li>🌍 محتوى سياحي وثقافي</li>
+              </ul>
+              <div class="mt-3">
+                <a class="btn btn-brand w-100" href="#contact"><i class="bi bi-bag-check me-2"></i>اختار الأساسية</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro (Best) -->
+        <div class="col-lg-4">
+          <div class="price-card" style="outline: 2px solid rgba(22,163,74,.20);">
+            <div class="top">
+              <div class="d-flex align-items-center justify-content-between gap-2">
+                <p class="name mb-1">الباقة المميزة</p>
+                <span class="badge-best"><i class="bi bi-star-fill"></i> الأكثر اختيارًا</span>
+              </div>
+              <div class="price">699 <small>ريال</small></div>
+              <div class="muted">قيمة أعلى + دعم مباشر</div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>كل مميزات الباقة الأساسية</li>
+                <li>👤 جلسة محادثة خاصة 1:1 (30 دقيقة)</li>
+                <li>♻️ تحديثات مجانية مستقبلية</li>
+                <li>💬 دعم واتساب مباشر</li>
+              </ul>
+              <div class="mt-3">
+                <a class="btn btn-accent w-100" href="#contact"><i class="bi bi-lightning me-2"></i>اختار المميزة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="col-lg-4">
+          <div class="price-card">
+            <div class="top">
+              <p class="name mb-1">الباقة الاحترافية</p>
+              <div class="price">999 <small>ريال</small></div>
+              <div class="muted">للي عاوز أقصى استفادة</div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>كل مميزات الباقة المميزة</li>
+                <li>👥 3 جلسات محادثة خاصة</li>
+                <li>🧭 مراجعة قبل السفر</li>
+                <li>🏷️ خصم على برامج متقدمة</li>
+              </ul>
+              <div class="mt-3">
+                <a class="btn btn-brand w-100" href="#contact"><i class="bi bi-bag-check me-2"></i>اختار الاحترافية</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 stripe">
+        <div class="d-flex align-items-start gap-3">
+          <i class="bi bi-piggy-bank fs-5" style="color:var(--brand)"></i>
+          <div>
+            <strong>اقتراح تسعير ذكي:</strong>
+            <span class="muted">لو حابب “تبرير بصري” للسعر: حط مقارنة بسيطة (وقت + توتر + أخطاء ترجمة) مقابل (ثقة + تعامل + وقت أقل).</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audio Trust -->
+  <section id="audio">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-2">اسمع بنفسك (مقاطع قصيرة)</h2>
+          <p class="section-sub mb-0">
+            حط هنا 6–7 مقاطع صوت من المحاضرات لرفع الثقة (نطق + محادثة).
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <!-- Repeat tiles as you like -->
+        <div class="col-md-6 col-lg-4">
+          <div class="audio-tile">
+            <div class="bubble"><i class="bi bi-volume-up"></i></div>
+            <div class="w-100">
+              <div class="fw-bold mb-1">مقطع 1 — تحية وتعريف</div>
+              <!-- Put your audio file -->
+              <audio controls preload="none">
+                <source src="audio/sample1.mp3" type="audio/mpeg">
+                متصفحك لا يدعم تشغيل الصوت.
+              </audio>
+              <div class="small muted mt-1">استبدل المسار بـ audio/sample1.mp3</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="audio-tile">
+            <div class="bubble"><i class="bi bi-volume-up"></i></div>
+            <div class="w-100">
+              <div class="fw-bold mb-1">مقطع 2 — سؤال عن الاتجاهات</div>
+              <audio controls preload="none">
+                <source src="audio/sample2.mp3" type="audio/mpeg">
+              </audio>
+              <div class="small muted mt-1">استبدل المسار بـ audio/sample2.mp3</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="audio-tile">
+            <div class="bubble"><i class="bi bi-volume-up"></i></div>
+            <div class="w-100">
+              <div class="fw-bold mb-1">مقطع 3 — مطعم ودفع</div>
+              <audio controls preload="none">
+                <source src="audio/sample3.mp3" type="audio/mpeg">
+              </audio>
+              <div class="small muted mt-1">استبدل المسار بـ audio/sample3.mp3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-2">الأسئلة الشائعة</h2>
+          <p class="section-sub mb-0">إجابات واضحة ومباشرة عشان تطمّن قبل الشراء.</p>
+        </div>
+      </div>
+
+      <div class="accordion" id="faqAcc">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+              هل الدليل مناسب لو أنا صفر في اللغة الروسية؟
+            </button>
+          </h2>
+          <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+            <div class="accordion-body">
+              نعم. الدليل يبدأ من الصفر وهو مخصص لتسهيل رحلة السياحة في روسيا للمبتدئين تمامًا.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+              هل الدروس الأونلاين تكون مسجلة؟
+            </button>
+          </h2>
+          <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+            <div class="accordion-body">
+              نعم! تقدر تشاهد الدروس في أي وقت وبسرعتك، مع تدريبات عملية تثبت المعلومات.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+              هل في متابعة وأقدر أسأل لو فيه حاجة مش مفهومة؟
+            </button>
+          </h2>
+          <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+            <div class="accordion-body">
+              طبعًا! اسأل أي حاجة—إحنا معاك خطوة بخطوة (واتساب/تليجرام حسب الباقة).
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+              هل بعد الدليل فعلاً أقدر أتواصل مع الناس في روسيا؟
+            </button>
+          </h2>
+          <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+            <div class="accordion-body">
+              بالتأكيد! هتقدر تتعامل في المطار، المطاعم، المترو وكل مكان بثقة باستخدام جُمل عملية جاهزة.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5">
+              هل أقدر أكمل دراسة اللغة معاكم أونلاين؟
+            </button>
+          </h2>
+          <div id="a5" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+            <div class="accordion-body">
+              أكيد! عندنا برامج أونلاين متقدمة تساعدك تتقن اللغة بشكل أعمق بعد ما تبدأ صح.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h2 class="section-title mb-2">جاهز تسافر روسيا بثقة؟</h2>
+          <p class="section-sub mb-0">
+            اضغط واتساب أو تليجرام للتواصل (استفسار / دفع / اختيار الباقة).
+          </p>
+          <div class="mt-3 d-flex flex-wrap gap-2">
+            <!-- Replace phone and telegram username -->
+            <a class="btn btn-accent btn-lg px-4" target="_blank" href="https://wa.me/+79996357150?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%B9%D8%A7%D9%88%D8%B2%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B1%D9%88%D8%B3%D9%8A%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%20%F0%9F%87%B7%F0%9F%87%BA">
+              <i class="bi bi-whatsapp me-2"></i> واتساب
+            </a>
+            <a class="btn btn-brand btn-lg px-4" target="_blank" href="https://t.me/ahmed_morsy1">
+              <i class="bi bi-telegram me-2"></i> تليجرام
+            </a>
+            <a class="btn btn-soft btn-lg px-4" href="#pricing">
+              <i class="bi bi-bag-check me-2"></i> شوف الباقات
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="x-card p-3">
+            <h5 class="fw-bold mb-2"><i class="bi bi-lock me-1"></i> ملاحظة ثقة</h5>
+            <p class="muted mb-3" style="line-height:1.9">
+              المحتوى عملي ومباشر للسفر، وهدفه يخليك تتعامل بثقة في المواقف اليومية
+              بدل ما تعتمد على ترجمة حرفية أو تدخل في إحراج.
+            </p>
+            <div class="row g-2">
+              <div class="col-6"><div class="mini"><span class="tag"><i class="bi bi-check2-circle"></i> عملي</span><div class="muted">مواقف يومية</div></div></div>
+              <div class="col-6"><div class="mini"><span class="tag"><i class="bi bi-check2-circle"></i> سريع</span><div class="muted">من غير تعقيد</div></div></div>
+              <div class="col-6"><div class="mini"><span class="tag"><i class="bi bi-check2-circle"></i> مرن</span><div class="muted">ابدأ وقت ما تحب</div></div></div>
+              <div class="col-6"><div class="mini"><span class="tag"><i class="bi bi-check2-circle"></i> داعم</span><div class="muted">واتساب/تليجرام</div></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <div class="fw-bold">روسيا بالعربي</div>
+        <div class="small muted">© <span id="year"></span> جميع الحقوق محفوظة</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp/Telegram -->
+  <div class="float-actions">
+    <a class="fab fab-wa" target="_blank" href="https://wa.me/+79996357150?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%B9%D8%A7%D9%88%D8%B2%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%B1%D9%88%D8%B3%D9%8A%D8%A7%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A"><i class="bi bi-whatsapp"></i></a>
+    <a class="fab fab-tg" target="_blank" href="https://t.me/ahmed_morsy1"><i class="bi bi-telegram"></i></a>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 overflow-hidden">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold"><i class="bi bi-play-circle me-1"></i> فيديو تعريفي قصير</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <!-- ضع رابط فيديو يوتيوب/فيميو أو فيديو mp4 -->
+          <div class="ratio ratio-16x9">
+            <iframe id="ytFrame" src="https://www.youtube.com/embed/VIDEO_ID?rel=0"
+              title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="small muted">استبدل <code>VIDEO_ID</code> بمعرّف الفيديو الخاص بك.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Stop YouTube when modal closes (simple reset)
+    const videoModal = document.getElementById('videoModal');
+    const ytFrame = document.getElementById('ytFrame');
+    const ytSrc = ytFrame.getAttribute('src');
+
+    videoModal.addEventListener('hidden.bs.modal', () => {
+      ytFrame.setAttribute('src', ytSrc);
+    });
+  </script>
+
+</body>
+</html>
